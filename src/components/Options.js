@@ -2,9 +2,8 @@
 import Input from './Input'
 export default function Header(props) {
 	const {percentage, setPercentage, years, setYears, compoundingPerYear ,setCompoundingPerYear, amount, setAmount, contributionAmount, setContributionAmount, contributionFrequency, setContributionFrequency} = props;
-	return <div className="p-6 bg-sky-100 lg:col-span-2 grid grid-cols-2 lg:grid-cols-3 items-start rounded-lg w-full ">
-		
-				<Input label="Durée" type="number" value={years} onChange={(e) => setYears(Number(e.target.value))}/>
+	return <div className="p-6 bg-sky-100 lg:col-span-2 grid grid-cols-2 lg:grid-cols-3 items-start rounded-lg w-full box-border h-[200px]">
+			<Input label="Durée" type="number" value={years} onChange={(e) => setYears(Number(e.target.value))}/>
 			<Input label="Investissements de depart" type="number" value={amount} onChange={(e) => setAmount(Number(e.target.value))}/>
 			<Input label="taux annuel" type="number" value={percentage} onChange={(e) => setPercentage(Number(e.target.value))}/>
 			<Input label="Versement régulier" type="number" value={contributionAmount} onChange={(e) => setContributionAmount(Number(e.target.value))}/>

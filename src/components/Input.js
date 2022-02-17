@@ -1,6 +1,6 @@
 export default function input({label,...rest}) {
 	return (
-		<div className="flex gap-2 h-20"> 
+		<div className="flex gap-2"> 
 			<label 
 				className="w-40 inline-flex font-bold justify-end text-right">
 				{label}

@@ -31,7 +31,7 @@ function App() {
 		contributionFrequency
 	])
   return (
- 			  <div className="App bg-gray-600 grid grid-cols-1 lg:grid-rows-[200px_1fr] lg:grid-cols-2 min-h-screen p-8 gap-6 items-start">
+ 			  <div className="App bg-gray-600 grid grid-cols-1 lg:grid-rows-[200px_1fr] lg:grid-cols-2 min-h-screen p-8 gap-4 items-start">
 					<Options 
 						years={years} 
 						setYears={setYears} 
