@@ -31,7 +31,7 @@ function App() {
 		contributionFrequency
 	])
   return (
- 			  <div className="App bg-gray-600 grid grid-cols-1 lg:grid-rows-[200px_1fr] lg:grid-cols-2 min-h-screen p-8 gap-4 items-start">
+ 			  <div className="App font-noto bg-slate-900 grid grid-cols-1 lg:grid-rows-[200px_1fr] lg:grid-cols-2 min-h-screen p-8 gap-4 items-start">
 					<Options 
 						years={years} 
 						setYears={setYears} 
@@ -48,7 +48,12 @@ function App() {
 		/>
 
 					<Table data={data}/>
-					<Graph data={data}/>
+					<div>
+						<div className="flex bg-white rounded-lg p-6 overflow-hidden text-slate-700 font-bold text-5xl mb-4">
+							{data.at(-1).amount.toLocaleString(undefined, {currency: 'EUR'} )} €
+						</div>
+						<Graph data={data}/>
+					</div>
 				</div>
 			);
 		}
