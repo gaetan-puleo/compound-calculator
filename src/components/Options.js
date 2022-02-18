@@ -2,7 +2,7 @@
 import Input from './Input'
 export default function Header(props) {
 	const {percentage, setPercentage, years, setYears, compoundingPerYear ,setCompoundingPerYear, amount, setAmount, contributionAmount, setContributionAmount, contributionFrequency, setContributionFrequency} = props;
-	return <div className="p-6 bg-gradient-to-r from-green-400 via-emerald-400 to-green-200  lg:col-span-2 items-start rounded-lg w-full box-border h-[200px] flex gap-4 flex-wrap">
+	return <div className="p-6 bg-gradient-to-r from-green-400 via-emerald-400 to-green-200  lg:col-span-2 items-start rounded-lg w-full box-border lg:h-[200px] flex gap-4 flex-wrap">
 			<Input 
 				label="Durée" 
 				type="number" 
